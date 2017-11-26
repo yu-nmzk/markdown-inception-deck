@@ -114,19 +114,23 @@
 
 ## 9\. トレードオフ・スライダー
 
-max <---> min                                                      | 典型的なフォース
------------------------------------------------------------------- | ---------------
-<input type="range" min="1" max="5" style="width:200px" value="1"> | 機能をぜんぶ揃える（スコープ）
-<input type="range" min="1" max="5" style="width:200px" value="1"> | 予算内に収める（予算）
-<input type="range" min="1" max="5" style="width:200px" value="1"> | 期日を死守する（時間）
-<input type="range" min="1" max="5" style="width:200px" value="1"> | 高い品質、少ない欠陥（品質）
+### 典型的なフォース
 
-max <---> min                                                      | 上記以外で重要なこと
------------------------------------------------------------------- | ----------
-<input type="range" min="1" max="5" style="width:200px" value="1"> | 使い勝手
-<input type="range" min="1" max="5" style="width:200px" value="1"> | とにかくシンプルに！
-<input type="range" min="1" max="5" style="width:200px" value="1"> | 詳細な監査ログ
-<input type="range" min="1" max="5" style="width:200px" value="1"> | [などなど]
+max | >>> | >>> | >>> | min | 項目
+--- | --- | --- | --- | --- | ---------------
+o   |     |     |     |     | 機能をぜんぶ揃える（スコープ）
+    | o   |     |     |     | 予算内に収める（予算）
+    |     | o   |     |     | 期日を死守する（時間）
+    |     |     | o   |     | 高い品質、少ない欠陥（品質）
+
+### 上記以外で重要なこと
+
+max | >>> | >>> | >>> | min | 項目
+--- | --- | --- | --- | --- | ----------
+o   |     |     |     |     | 使い勝手
+    | o   |     |     |     | とにかくシンプルに！
+    |     | o   |     |     | 詳細な監査ログ
+    |     |     | o   |     | [などなど]
 
 <div style="page-break-before:always">
 </div>
